@@ -1,0 +1,23 @@
+[
+    {
+        "nama" : "Refi Yusuf Pradna",
+        "nrp" : "088230536317",
+        "email" : "refi@gmail.com",
+        "jurusan" : "Sistem Informasi",
+        "idDosenWali" : 1
+    },
+    {
+        "nama" : "Bellingham",
+        "nrp" : "0882305636317",
+        "email" : "bell@gmail.com",
+        "jurusan" : "Sistem Informasi",
+        "idDosenWali" : 1
+    },
+    {
+        "nama" : "Raul Gonzales",
+        "nrp" : "088230536317",
+        "email" : "rg@gmail.com",
+        "jurusan" : "Sistem Informasi",
+        "idDosenWali" : 1
+    }
+]
