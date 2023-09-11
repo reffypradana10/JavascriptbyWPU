@@ -21,8 +21,9 @@ $.ajax({
         // ketika tombol di-klik
         $('.modal-detail-button').on('click', function(){
             $.ajax({
-                url: 'http://www.omdbapi.com/?apikey=d20aad1e&s=' + $(this).data('imdbid'),
+                url: 'http://www.omdbapi.com/?apikey=d20aad1e&i=' + $(this).data('imdbid'),
                 success: m => {
+                    console.log(m)
                     const movieDetail = `
                         <div class="container-fluid">
                         <div class="row">
@@ -34,7 +35,7 @@ $.ajax({
                                     <li class="list-group-item"><h4>${m.Title} (${m.Year})</h4></li>
                                     <li class="list-group-item">Director : <strong>${m.Director}</strong></h4></li>
                                     <li class="list-group-item">Actor : <strong>${m.Actors}</strong></li>
-                                    <li class="list-group-item">Writter : <strong>${m.Writters}</strong></li>
+                                    <li class="list-group-item">Writter : <strong>${m.Writer}</strong></li>
                                     <li class="list-group-item">plot : <strong>${m.Plot}</strong><br></li>
                                 </ul>
                             </div>
@@ -47,6 +48,7 @@ $.ajax({
                     console.log(e.responseText)
                 }
             })
+            // console.log($(this).data('imdbid'))
         })
     },
     error: (e) => {
