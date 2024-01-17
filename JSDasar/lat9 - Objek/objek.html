@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Javascript</title>
+  </head>
+  <body>
+    <h1>Object Javascript</h1>
+
+    <script>
+      //  Membuat Object (Literal Object)
+      //   var mhs = {
+      //     nama: "Rephi Pradana",
+      //     umur: 21,
+      //     ips: [2, 2, 2, 2],
+      //     alamat: {
+      //       jalan: "JL. Arjuna ",
+      //       kecamatan: "Doko",
+      //       kabupaten: "Blitar",
+      //     },
+      //   };
+
+      // Function Declaration
+      //   function buatObjectMahasiswa(nama, nrp, email, jurusan) {
+      //     var mhs = {};
+      //     mhs.nama = nama;
+      //     mhs.nrp = nrp;
+      //     mhs.email = email;
+      //     mhs.jurusan = jurusan;
+      //     return mhs;
+      //   }
+      //   let mhs3 = buatObjectMahasiswa("refi", "1231", "refi@mail.com", "tkj");
+
+      // Constructor
+      //   function Mahasiswa(nama, nrp, email, jurusan) {
+      //     this.nama = nama;
+      //     this.nrp = nrp;
+      //     this.email = email;
+      //     this.jurusan = jurusan;
+      //   }
+      //   let mhs4 = new Mahasiswa("refi", "1231", "refi@mail.com", "tkj");
+      //   console.log(mhs4);
+
+      //   This
+      //   console.log(this);
+
+      // cara 1 - function declaration
+      //   function halo() {
+      //     console.log(this);
+      //     console.log("halo");
+      //   }
+      //   this.halo();
+      // this mengembalikan object global
+
+      // cara 2 - object literal
+      //   var obj = { a: 10, nama: "rephi" };
+      //   obj,
+      //     (halo = function () {
+      //       console.log(this);
+      //       console.log("halo");
+      //     });
+      //   obj.halo();
+      // this mengembalikan object yang bersangkutan
+
+      // cara 3 - constructor
+      function Halo() {
+        console.log(this);
+        console.log("Hallo");
+      }
+      new Hallo();
+      // this mengembalikan object yang baru dibuat
+    </script>
+  </body>
+</html>

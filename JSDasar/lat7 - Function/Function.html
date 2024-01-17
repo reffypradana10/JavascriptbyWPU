@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Javascript</title>
+  </head>
+  <body>
+    <h1>Function Javascript</h1>
+    <script>
+      // Function Javascript
+      //   function jumlahVolumeDuaKubus(a, b) {
+      //     let VolumeA;
+      //     let VolumeB;
+      //     let total;
+      //     VolumeA = a * a * a;
+      //     VolumeB = b * b * b;
+      //     total = VolumeA + VolumeB;
+      //     return total;
+
+      // Parameter & Argument
+      //   function tambah(a, b) {
+      //     return a + b;
+      //   }
+      //   let s = parseInt(prompt("Masukkan Nilai"));
+      //   let bw = parseInt(prompt("Masukkan Nilai"));
+      //   let hasil = tambah(s, bw);
+      //   console.log(hasil);
+
+      // Refactoring -> Mengatur tata letak coding biar lebih rapi dan efisien
+      //   function jumlahVolumeDuaKubus(a, b) {
+      //     return (total = a * a * a + b * b * b);
+      //   }
+
+      // Variable Scope -> javascript menganut function scope bukan block scope
+      //   var a = 1; // window scope/global scope
+      //   function tes() {
+      //     var a = 2;
+      //     console.log(window.a);
+      //   }
+      //   tes();
+
+      // Rekursif -> Fungsi yang Memanggil dirinya sendiri
+      function tampilAngka(n) {
+        if (n === 0) return; // Base Case -> Kondisi akhir dari rekursif yang menghasilkan nilai
+        console.log(n);
+        return tampilAngka(n - 1);
+      }
+
+      tampilAngka(10);
+    </script>
+  </body>
+</html>
