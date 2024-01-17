@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For</title>
+  </head>
+  <body>
+    <h1>For Javascript</h1>
+
+    <script>
+      // For
+      // For(condisi awal;pengkondisian;increment/decrement){ ekspresi }
+      for (i = 1; i <= 10; i++) {
+        console.log("hello world");
+      }
+
+      // Latihan 2
+      let jmlAngkot = 10;
+      let angkotBeroperasi = 3;
+      let noAngkot = 1;
+      while (noAngkot <= angkotBeroperasi) {
+        console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+        noAngkot++;
+      }
+
+      for (noAngkot; noAngkot <= jmlAngkot; noAngkot++) {
+        console.log("Angkot No. " + noAngkot + " tidak beroperasi dengan baik.");
+      }
+
+      // Pengulangan  & Pekondisian
+      let s = "";
+      // for (let i = 0; i < 5; i++) {
+      //   for (let j = 1; j <= i; j++) {
+      //     s += "*";
+      //   }
+      //   s += "\n";
+      // }
+      // console.log(s);
+
+      for (let i = 10; i > 0; i--) {
+        for (let j = 1; j < i; j++) {
+          s += "*";
+        }
+        s += "\n";
+      }
+      console.log(s);
+    </script>
+  </body>
+</html>

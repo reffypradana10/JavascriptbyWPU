@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Else</title>
+  </head>
+  <body>
+    <h1>If Else Javascript</h1>
+
+    <script>
+      // If Else
+      // If(kondisi){aksi}
+      let i = 1;
+      if (i <= 10) {
+        //kondisi benar
+        console.log("hello world"); //tidak melakukan looping
+      }
+
+      // Latihan 3
+      let jmlAngkot = 10;
+      let angkotBeroperasi = 6;
+      let noAngkot = 1;
+      let AngkotLembur1 = 8;
+      let AngkotLembur2 = 10;
+      let AngkotLembur3 = 5;
+      for (noAngkot; noAngkot <= jmlAngkot; noAngkot++) {
+        if (noAngkot <= angkotBeroperasi && noAngkot !== AngkotLembur3) {
+          console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+        } else if (noAngkot === AngkotLembur1 || noAngkot === AngkotLembur2 || noAngkot === AngkotLembur3) {
+          console.log("Angkot No. " + noAngkot + " sedang lembur");
+        } else {
+          console.log("Angkot No. " + noAngkot + " tidak beroperasi dengan baik.");
+        }
+      }
+    </script>
+  </body>
+</html>

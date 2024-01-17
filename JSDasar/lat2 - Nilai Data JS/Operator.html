@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <script>
+      // Aritmatika - Binary (membutuhkan 2 operand)
+      // +, -, *, /, %(modulus/sisabagi)
+      // Operator Precedence :urutan operasi Matematika () -> * -> / -> + -> -
+      console.log(1 + 1); // Hasilnya : 2
+      console.log(3 - 2); // Hasilnya : 1
+      console.log(2 * 3); // Hasilnya : 6
+      console.log(20 / 4); // Hasilnya : 5
+      console.log(20 / 3); // Hasilnya : 6.666666666666667
+
+      // Penugasan/Assignment - Binary
+      var x;
+      x = 10;
+      console.log((x = 200));
+      // Operator Assignment Lainnya
+      // =+, -=, *=, /=, %=
+
+      // Perbandingan - Binary
+      // ==, !=, ===, !==, >, <, >=, <=
+      console.log(10 == 10); // Hasilnya : True
+      console.log(1 != 10); // Hasilnya : True
+
+      // Logika - Binary
+      // && , ||, !
+      // and, or, not
+      x = 20;
+      console.log(x % 2 == 0); // Hasilnya : True
+
+      // String - Binary
+      // +
+      var a;
+      var b;
+      a = "apple";
+      b = "pen";
+      console.log(a + b);
+
+      // Kondisional -Ternary (membutuhkan 3 operand)
+      console.log(x % 2 == 0 ? "genap" : "ganjil");
+
+      // TypeOf - Unary (membutuhkan 1 operand) -> Mengetahui Tipe Data
+      console.log(typeof 10);
+    </script>
+  </body>
+</html>

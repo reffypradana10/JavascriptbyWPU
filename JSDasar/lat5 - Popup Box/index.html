@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUp Box</title>
+  </head>
+  <body>
+    <script>
+      // alert('...') -> Menampilkan pesan PopUp Box di browser
+      //   alert("Selamat Datang");
+
+      // promt('...') -> Menampilkan pesan PopUp Box untuk menginputkan sebuah variabel
+      //   var x = prompt("Masukkan Nama");
+      //   console.log(x);
+
+      // confirm('...') -> Menampilkan pesan PopUp Box untuk memberikan jawaban ya / tidak
+      //   var y = confirm("Coba lagi?");
+      // console.log(y); // Hasilnya jika Ya = True, Tidak = False
+
+      // Contoh confirm
+      var lagi = true;
+      alert("Selamat Datang");
+      while (lagi) {
+        var x = prompt("Masukkan Nama: ");
+        alert("Halo " + x);
+        var y = confirm("Apakah Mau Masukkan nama lagi?");
+        lagi = y;
+      }
+    </script>
+  </body>
+</html>

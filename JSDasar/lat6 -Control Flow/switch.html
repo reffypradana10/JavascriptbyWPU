@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Javascript</title>
+  </head>
+  <body>
+    <h1>Switch Javascript</h1>
+
+    <script>
+      //switch javascript
+      // switch(ekspresi){
+      // case "nilai1";
+      // break;
+      //}
+
+      // let angka = parseInt(prompt("Masukkan angka :"));
+
+      // for (i = 1; i <= angka; i++) {
+      //   switch (i) {
+      //     case i:
+      //       console.log("Anda Memasukkan angka " + i);
+      //       break;
+      //     default:
+      //       alert("Anda salah memasukkan angka");
+      //   }
+      // }
+
+      let item = prompt("Masukkan nama Makanan / Minuman : \n(cth: nasi, daging, susu)");
+      let sehat = "Makanan Sehat";
+      let TidakSehat = "Makanan Tidak Sehat";
+      switch (item) {
+        case "nasi":
+        case "daging":
+        case "susu":
+          alert(sehat);
+          break;
+        case "softdrink":
+          alert(TidakSehat);
+          break;
+        default:
+          alert("Anda salah memasukkan inputan");
+      }
+    </script>
+  </body>
+</html>
